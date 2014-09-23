@@ -22,7 +22,7 @@ Open up your personal GitHub account and find the repository you want to edit. T
 
 ### Markdown
 
-You'll notice that Prose uses this funny markup and plain text. This markup is called Markdown, and Prose's help (the ? in the top menu) will explain some basics. You can also (dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics).
+You'll notice that Prose uses this funny markup and plain text. This markup is called Markdown, and Prose's help (the ? in the top menu) will explain some basics. You can also [dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics).
 
 _N.B.: image insertion seems to be broken in Prose. If you're going to add images to the site, [let Cayden know](mailto:cayden@18millionrising.org), or you may set up Git on your desktop computer (tutorial coming soon)._
 

@@ -12,6 +12,16 @@ Then, go ahead and create a new branch using the "branches" dropdown. Name it so
 
 <img src="https://cloud.githubusercontent.com/assets/2704279/4381214/b66cfc3a-4372-11e4-8b05-94dd678574c3.PNG">
 
+Now you can edit your branch without negatively affecting the production site!
+
 ## Step Two: Edit Your Content in Prose
+
+Go to [prose.io](http://prose.io) and authorize it to access your GitHub account. Prose is amazing because it not only helps you learn Markdown, the markup format that we use to write pages for the website, but it also lets you preview the things you write so you know what you're getting yourself into.
+
+Make sure you navigate to your personal editing branch!
+
+<img src="https://cloud.githubusercontent.com/assets/2704279/4381492/02c19c0e-4377-11e4-9325-2f049a24864b.PNG">
+
+You'll notice that Prose uses this funny markup and plain text. This markup is called Markdown, and Prose's help (the ? in the top menu) will explain some basics. You can also (dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics).
 
 ## Step Three: Create a Pull Request

@@ -43,3 +43,7 @@ You'll be able to choose which repositories you're comparing, and then which bra
 <img src="https://cloud.githubusercontent.com/assets/2704279/4381750/f14fbd6c-437a-11e4-993e-fbfd6670e481.PNG">
 
 Now you're ready to add a little detail to explain your pull request, and click _Create Pull Request_. You're done! Cayden and/or the tech team will review your code and decide if they want to merge it with the production branch.
+
+## Protip: Go Incognito
+
+FYI, lately I've been having problems saving in Prose unless I'm in incognito mode in Chrome. Waiting to hear about a fix, but until then, if you're having problems saving, use anonymous browsing/incognito mode.

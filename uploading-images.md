@@ -1,4 +1,4 @@
-So, you might have noticed that the photo upload tool in Prose doesn't exactly work. Never fear, here's an easy workaround for you that is way simpler than installing Git on your machine. This will work for the time being until the feature is fixed or I figure something else out.
+The main shortcoming of editing directly in GitHub is that you can't update images directly in the browser. Since we don't need to track changes in images the way we do in text files, this solution will suffice (and keep all our images in one place).
 
 ## Basic Method: Open an Issue on GitHub
 

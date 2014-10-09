@@ -12,6 +12,8 @@ Then, go ahead and fork it by clicking "fork" in the upper righthand corner. Lan
 
 Now you can edit your fork without affecting the production site! You know, to prevent any untoward mistakes.
 
+If you've already forked, and are returning to your project, [make sure you update your fork from the trunk before proceeding](https://github.com/18mr/documentation/blob/master/sync-your-fork.md). It'll make the tech team's job wayyyy easier!
+
 ## Step Two: Edit Your Content
 
 You can both edit existing content or create new pages right in GitHub. Navigate to your _personal_ repository and either open up an existing file to edit it, or create a new one by clicking on the + after the filepath links up top:

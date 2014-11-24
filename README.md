@@ -10,7 +10,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 ### Get Set for Success: Setting Up Your Workspace
 
 1. How to [set up Jekyll on your local machine for the first time](http://internet-inspired.com/wrote/install-jekyll-in-osx-mavericks/). _External link; walkthrough for Mac OSX._
-2. How to get a local version of a site up and running.
+2. How to [get a local version of a site up and running](https://github.com/18mr/documentation/blob/master/local-site.md).
 
 ### Getting Stuff Done
 

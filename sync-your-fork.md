@@ -28,4 +28,4 @@ Here, you will be given the option to review the merge and then confirm it. If y
 
 ![merge](https://cloud.githubusercontent.com/assets/2704279/4584291/9b3aed94-4ff9-11e4-8f93-299ca6d7a801.PNG)
 
-And, you're done! Your personal sandbox fork should be 100% up-to-date.
+And, you're done! Your personal sandbox fork should be 100% up-to-date. Make sure you sync any local files you have before editing locally, as well.

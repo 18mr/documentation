@@ -38,6 +38,12 @@ For more information about creating the right Front Matter, [check out this guid
 
 You'll also notice that our website uses this funny markup and plain text. This markup is called Markdown, and you can [dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics). The idea is pretty simple--offering a plaintext way of generating styled pages, with an emphasis on writing instead of coding.
 
+### Action Network
+
+If you're just making a petition page, Action Network already provides all the goodies you need to roll out a new petition.
+
+Check out the Action Network document for more information on how to generate the code you need.
+
 ## Step Three: Upload It!
 
 When you're done making your edits, save your changes in your text editor and create your commit. Saving in GitHub is called making a "commit." You'll be asked to describe your change--this is standard procedure for making commits, so other team members can quickly ascertain what you did, and every file that is changed in that commit will be labeled accordingly.

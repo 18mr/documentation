@@ -14,7 +14,9 @@ Fire up your text editor. I use Notepad++, but it's Windows-only. Take a look ar
 
 In general, you'll be editing files that are in the _posts folder. Much of the other content is required to build and style the site, so that can be left alone.
 
-If you're making a new file in the _posts folder, say, to host a new petition, you'll want to make sure your file has the right filename. Every file in the _posts folder has this format filename: __2014-MO-DA-unique-slug.md__
+If you're making a new file in the _posts folder, say, to host a new petition, you'll want to make sure your file has the right filename. Every file in the _posts folder has this format filename: 
+
+    2014-MO-DA-unique-slug.md
 
 ![petitions](https://cloud.githubusercontent.com/assets/2704279/5173174/30455d98-73db-11e4-9a4d-d9310188313f.PNG)
 

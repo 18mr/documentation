@@ -1,38 +1,34 @@
-This file is a quick and easy guide for campaigners who want to start editing content themselves in the new stack.
+This file assumes that you have [set up Jekyll locally](https://github.com/18mr/documentation/blob/master/local-site.md).
 
 The reason that this workflow exists is that once changes are pushed to the GitHub server, they're live on the web. We want to avoid publishing mistakes and breaking the website at all costs, and this also helps the tech team monitor who's making which edits, and help you out whenever necessary.
 
-## Step One: Fork It!
+## Step One: Sync It!
 
-First, you need to create your own fork of the repository you want to work with. Navigate to the repository that you want to make a copy of.
+You should have a fork living on your local machine by now. If not, there are [complete instructions here](https://github.com/18mr/documentation/blob/master/local-site.md).
 
-<img src="https://cloud.githubusercontent.com/assets/2704279/4381217/b986275c-4372-11e4-8e0d-d5fda92fd6c0.PNG">
+Open up the GitHub application and [make sure you update your fork from the trunk before proceeding](https://github.com/18mr/documentation/blob/master/sync-your-fork.md). This ensures that you aren't adding to an outdated version of the site that might look different when you submit a pull request. There should be a little notification next to the "sync" button in the upper righthand corner of GitHub that indicates there's something fresh to update from the server.
 
-Then, go ahead and fork it by clicking "fork" in the upper righthand corner. Land the fork in your personal GitHub account.
+## Step Two: Edit It!
 
-Now you can edit your fork without affecting the production site! You know, to prevent any untoward mistakes.
+Fire up your text editor. I use Notepad++, but it's Windows-only. Take a look around at text editors and find one that works for you.
 
-If you've already forked, and are returning to your project, [make sure you update your fork from the trunk before proceeding](https://github.com/18mr/documentation/blob/master/sync-your-fork.md). It'll make the tech team's job wayyyy easier!
+In general, you'll be editing files that are in the _posts folder. Much of the other content is required to build and style the site, so that can be left alone.
 
-## Step Two: Edit Your Content
+If you're making a new file in the _posts folder, say, to host a new petition, you'll want to make sure your file has the right filename. Every file in the _posts folder has this format filename: __2014-MO-DA-unique-slug.md__
 
-You can both edit existing content or create new pages right in GitHub. Navigate to your _personal_ repository and either open up an existing file to edit it, or create a new one by clicking on the + after the filepath links up top:
+![petitions](https://cloud.githubusercontent.com/assets/2704279/5173174/30455d98-73db-11e4-9a4d-d9310188313f.PNG)
 
-![create a new post](https://cloud.githubusercontent.com/assets/2704279/4512637/aad00b06-4b42-11e4-8e24-dda7bc9d98c4.PNG)
+This tells Jekyll how to process the file, and is crucial when you create a new file.
 
-If you create a new post, you'll see a plain text editor box. Be sure to create a filename that is consistent with [Jekyll's naming conventions](http://jekyllrb.com/docs/posts/). That means, your filename will be something like: YEAR-MONTH-DAY-BLOGTITLE.md.
-
-![edit your new post](https://cloud.githubusercontent.com/assets/2704279/4512638/aad050e8-4b42-11e4-8101-537ded83493f.PNG)
-
-On the other hand, if you're editing an existing post, you'll first see the "preview" pane when you open the file. It'll look like this:
-
-![open an existing file](https://cloud.githubusercontent.com/assets/2704279/4512635/aacd53de-4b42-11e4-8e2f-3be0d5256c5c.PNG)
-
-When you click the pencil icon in the upper righthand corner of the preview box, you'll get to a text box.
+Keep in mind that every time you save your file, Jekyll will regenerate the webpage at _http://localhost:4000_. This is useful so as you work, you can make sure your pages look up to snuff.
 
 ### Metadata
 
-You probably notice that there is this weird little table of information in the last screenshot. That stuff is the "YAML Front Matter," and it tells Jekyll how to process the file to create a beautiful, styled webpage. You need, at minimum, to place two sets of three dashes at the top of your document so Jekyll will process it.
+In a new file, you'll need to add one more crucial element to make sure Jekyll can process your file. At the top of every _pages file, you'll notice some information that falls between two sets of dashes. That stuff is the "YAML Front Matter," and it tells Jekyll how to process the file to create a beautiful, styled webpage. You need, at minimum, to place two sets of three dashes at the top of your document so Jekyll will process it.
+
+![frontmatter](https://cloud.githubusercontent.com/assets/2704279/5173219/a9d3b542-73db-11e4-9cbb-1adb8012f4e0.PNG)
+
+At minimum, for a new petition page, your Front Matter & post body should look like this.
 
 For more information about creating the right Front Matter, [check out this guide](http://jekyllrb.com/docs/frontmatter/). Before creating Front Matter of your own, it might be a good idea to check out other posts that exist in a similar category to the one you'd like to create.
 
@@ -40,15 +36,21 @@ For more information about creating the right Front Matter, [check out this guid
 
 You'll also notice that our website uses this funny markup and plain text. This markup is called Markdown, and you can [dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics). The idea is pretty simple--offering a plaintext way of generating styled pages, with an emphasis on writing instead of coding.
 
-_N.B.: you can't insert images automatically into a GitHub page. Check out [this documentation](https://github.com/18mr/documentation/blob/master/uploading-images.md) for a guide on how to upload your images and make them accessible._
+## Step Three: Upload It!
 
-When you're done making your edits, save your changes by scrolling down and creating your commit. Saving in GitHub is called making a "commit." You'll be asked to describe your change--this is standard procedure for making commits, so other team members can quickly ascertain what you did, and every file that is changed in that commit will be labeled accordingly.
+When you're done making your edits, save your changes in your text editor and create your commit. Saving in GitHub is called making a "commit." You'll be asked to describe your change--this is standard procedure for making commits, so other team members can quickly ascertain what you did, and every file that is changed in that commit will be labeled accordingly.
 
-![create a commit](https://cloud.githubusercontent.com/assets/2704279/4512638/aad050e8-4b42-11e4-8101-537ded83493f.PNG)
+You can easily make your commit using the GitHub application. Describe the commit, then confirm the commit.
 
-## Step Three: Create a Pull Request
+![commit](https://cloud.githubusercontent.com/assets/2704279/5173281/2e638918-73dc-11e4-8a37-8d3cd29a4c30.PNG)
 
-Once you've made your commit, it's time to add it to the production site. Back in your fork's main directory, you'll see that there's a little green button in the upper lefthand corner.
+As you can see, we're making a commit to the gh-pages branch. This is where it should be if you want it to be part of the site!
+
+You'll also notice that a little flag pops up next to "Sync" in the upper righthand corner. Sync your work to the server.
+
+## Step Four: Create a Pull Request
+
+Once you've made your commit, it's time to add it to the production site. Back in your repository on GitHub.com, you'll see that there's a little green button in the upper lefthand corner.
 
 <img src="https://cloud.githubusercontent.com/assets/2704279/4381570/3059548a-4378-11e4-905e-902b44173fa4.PNG">
 

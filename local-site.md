@@ -30,11 +30,11 @@ Now, you should be able to serve this on your local machine. (Assuming all the i
 
 Open up Terminal and navigate to the folder you cloned your repository into by typing:
 
-  cd your/filepath/here
+    cd your/filepath/here
   
 Once you're in the directory, type:
 
-  jekyll serve --watch
+    jekyll serve --watch
   
 Jekyll should now build your site. If you navigate to http://localhost:4000 in the browser of your choice, you'll see a local (i.e., not hosted on the internet) version of the website so you can look at the changes you make as you go. The "--watch" tag tells Jekyll to rebuild the site every time a change is detected in the repository.
 

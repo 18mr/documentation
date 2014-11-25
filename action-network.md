@@ -58,6 +58,13 @@ Back in Action Network, you can grab the code to embed the petition as a widget 
 
 ![widget-options](https://cloud.githubusercontent.com/assets/2704279/5191533/0595a0b6-74a4-11e4-8821-52f8aa1903e3.PNG)
 
+I'm a big fan of breaking up the code a little so it's easier for humans to read if something goes wrong, usually into four lines like this:
+
+    <link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
+    <script>window.yepnope || document.write('<script src="https://actionnetwork.org/assets/yepnope154-min.js"><\/script>');</script>
+    <script src='https://actionnetwork.org/widgets/v2/petition/petition-name?format=js&source=widget&style=full'></script>
+    <div id='can-petition-area-petition-name' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
+
 ## Step Four: Commit, Sync, Pull Request
 
 You're all set! [Click here for a reminder on how to commit, sync, and send a pull request](https://github.com/18mr/documentation/blob/master/editing-content.md#step-three-upload-it).

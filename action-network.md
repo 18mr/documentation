@@ -57,3 +57,7 @@ A basic description of each piece of metadata follows:
 Back in Action Network, you can grab the code to embed the petition as a widget in your new post by clicking "edit" on the petition on the 18MR organizational dashboard. You'll see a sidebar that prompts you to embed the petition, with a mess of code and a button that says "Options+" beneath it. Before you copy and paste that code into your new page, make sure that you have the proper options set up: enter "100%" into the custom width field; "Layout Styles Only"; and "Full Layout," as illustrated below.
 
 ![widget-options](https://cloud.githubusercontent.com/assets/2704279/5191533/0595a0b6-74a4-11e4-8821-52f8aa1903e3.PNG)
+
+## Step Four: Commit, Sync, Pull Request
+
+You're all set! [Click here for a reminder on how to commit, sync, and send a pull request](https://github.com/18mr/documentation/blob/master/editing-content.md#step-three-upload-it).

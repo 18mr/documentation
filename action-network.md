@@ -14,10 +14,46 @@ Once you've saved this stuff, as well as filling in the social/sharing copy and 
 
 ## Step Two: Prep It!
 
-Before you drop your widget into a new post, you need to create a new post. 
+Before you drop your widget into a new post, you need to create a new post. There are a few essential steps you need to take before you get started.
+
+### Prepare Your Local Clone
+
+Check out the [guide for keeping your files up-to-date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md) to learn how. Make sure your _local version_ of the website is up-to-date, not just the repository on your personal GitHub account.
+
+### Place a Featured Image in the Directory
+
+Featured images should __aspect ratio of 4:3__ and they should be added to the directory /static/images/featured.
+
+### Create a New File
+
+Open up your favorite text editor and create a new document. Save it as a .md file in the _posts directory on your hard drive's copy of the website. _posts all have a similar file naming convention: YEAR-MO-DA-unique-slug.md.
+
+### Create Front Matter
+
+YAML Front Matter is how Jekyll knows how to treat the files you add to the website. Every post and page in Jekyll needs Front Matter. Start with triple dashes at the beginning and end of your Front Matter.
+
+    ---
+    layout: petition-page
+    title: "Edward Blum: We Won't Be Used For Your Racist Agenda"
+    permalink: /blockblum/
+    category: campaigns
+    featured-image: '/static/images/featured/blum.png'
+    blurb: "Edward Blum is on a mission to dismantle affirmative action. And he's using AAPIs to do it."
+    description: "Despite his best efforts, Asian Americans are refusing to be a part of Blum’s racist, anti-affirmative action agenda. The days of divide and conquer are over!"
+    ---
+  
+A basic description of each piece of metadata follows:
+
++ 'layout' describes which template we will be using. "petition-page" is the default petition page template.
++ 'title' is the page title that will be displayed in the browser. It should be the same as the petition title you entered in Action Network
++ 'permalink' describes the url for the page. Make it descriptive and unique.
++ 'category' indicates that you are creating a post in the "campaigns" category. This is important for the future, as we make a full transition to Jekyll and multiple categories of posts will be posted to the same site.
++ 'featured-image' should be the relative path to the featured image you added to the /featured/ directory.
++ 'blurb' is the tiny snippet of text that will appear on the index of campaigns at action.18mr.org
++ 'description' is the Facebook Open Graph share text that you would like shared. This should be the same as in the Action Network share settings.
 
 ## Step Three: Embed It!
 
-Back in Action Network, you can grab the code to embed the petition as a widget in your new post by clicking "edit" on the petition on the 18MR organizational dashboard. You'll see a sidebar that prompts you to embed the petition, with a mess of code and a button that says "Options+" beneath it. Before you copy and paste that code into your new page, make sure that you have the proper options set up:
+Back in Action Network, you can grab the code to embed the petition as a widget in your new post by clicking "edit" on the petition on the 18MR organizational dashboard. You'll see a sidebar that prompts you to embed the petition, with a mess of code and a button that says "Options+" beneath it. Before you copy and paste that code into your new page, make sure that you have the proper options set up: enter "100%" into the custom width field; "Layout Styles Only"; and "Full Layout," as illustrated below.
 
 ![widget-options](https://cloud.githubusercontent.com/assets/2704279/5191533/0595a0b6-74a4-11e4-8821-52f8aa1903e3.PNG)

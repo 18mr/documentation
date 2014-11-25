@@ -8,9 +8,13 @@ You will probably need to get Tech to take care of this: versions will have to b
 
 ## With Jekyll
 
+### Jekyll is giving me an error saying a file is missing!
+
+Double-check you called everything correctly. Chances are, you misspelled something; if you can't find the file you're trying to reference, you might have made a mistake about its name.
+
 ### My Markdown isn't working!
 
-A common problem with Markdown is that you have to make a full line break before each new thing. For instance, if you have some explanatory text before a list, this won't work:
+A common problem with Markdown is that you have to make a full line break before each new styled section. For instance, if you have some explanatory text before a list, this won't work:
 
     Explanatory text.
     + item one

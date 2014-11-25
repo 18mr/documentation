@@ -12,7 +12,7 @@ Open up the GitHub application and [make sure you update your fork from the trun
 
 Fire up your text editor. I use Notepad++, but it's Windows-only. Take a look around at text editors and find one that works for you.
 
-In general, you'll be editing files that are in the _posts folder. Much of the other content is required to build and style the site, so that can be left alone.
+In general, you'll be editing files that are in the _posts folder. Much of the other content is required to build and style the site, so that can be left alone. The only exception are pages, which may be standalone .html files, or can be found in their own folders. This documentation will focus on editing posts.
 
 If you're making a new file in the _posts folder, say, to host a new petition, you'll want to make sure your file has the right filename. Every file in the _posts folder has this format filename: 
 
@@ -38,11 +38,25 @@ For more information about creating the right Front Matter, [check out this guid
 
 You'll also notice that our website uses this funny markup and plain text. This markup is called Markdown, and you can [dive into the more complex Markdown documentation here](http://daringfireball.net/projects/markdown/basics). The idea is pretty simple--offering a plaintext way of generating styled pages, with an emphasis on writing instead of coding.
 
+### Images
+
+If you want to add images to your post that aren't included in the petition body, you'll first want to add the image to the site directory. _On your local machine_, put your image in a directory in the website's directory on your hard drive. In general, images should be stored in a folder unique to the post, such as _static/images/unique-slug/_.
+
+To then include that image in your post, you can use either HTML or the Markdown syntax to call it.
+
+    ![alternate text]({{ baseurl }}/static/images/unique-slug/image-filename.jpg)
+
+OR
+
+    <img src="{{ baseurl }}/static/images/unique-slug/image-filename.jpg" />
+
+Notice that in both formats, there is the tag _baseurl_ in double curly brackets. This tells Jekyll to start the file path with whatever is specified as your site's base url, so when you upload everything to GitHub the filepath won't break.
+
 ### Action Network
 
 If you're just making a petition page, Action Network already provides all the goodies you need to roll out a new petition.
 
-Check out the Action Network document for more information on how to generate the code you need.
+Check out the Action Network document for more information on how to generate the code you need and make your petition look fabulous.
 
 ## Step Three: Upload It!
 

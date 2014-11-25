@@ -20,7 +20,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 ### General Reference
 
-1. A foolproof Markdown cheat sheet.
+1. A foolproof [Markdown cheat sheet](http://daringfireball.net/projects/markdown/basics).
 2. Help! What do I do if I'm stuck?
 
 _If you're not an 18MR.org campaigner, I'm interested to hear feedback on our workflow and processes. Feel free to drop me a line._

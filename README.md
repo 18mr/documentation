@@ -16,11 +16,11 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 1. Learn how to [create & edit content](https://github.com/18mr/documentation/blob/master/editing-content.md).
 2. Make sure your personal [fork is up to date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md).
-3. Tips and tricks for Action Network.
+3. [Step-by-step setup for Action Network petitions](https://github.com/18mr/documentation/blob/master/action-network.md).
 
 ### General Reference
 
 1. A foolproof [Markdown cheat sheet](http://daringfireball.net/projects/markdown/basics).
-2. Help! What do I do if I'm stuck?
+2. Help! [What do I do if I'm stuck?](https://github.com/18mr/documentation/blob/master/stuck.md).
 
 _If you're not an 18MR.org campaigner, I'm interested to hear feedback on our workflow and processes. Feel free to drop me a line._

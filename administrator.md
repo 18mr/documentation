@@ -6,7 +6,7 @@ The actual http://action.18mr.org is now hosted on Amazon Web Services. Here are
 
 Check to make sure there are no errors. Worth double-checking by typing
 
-  bundle exec jekyll serve
+    bundle exec jekyll serve
 
 and checking out http://localhost:4000 before pushing to AWS.
 
@@ -14,7 +14,7 @@ and checking out http://localhost:4000 before pushing to AWS.
 
 Now that you've built the most recent version of the site, type
 
-  s3_website push
+    s3_website push
 
 Hopefully everything is as it should be. s3_website should recognize where the built site is and update it accordingly.
 

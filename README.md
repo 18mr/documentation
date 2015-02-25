@@ -23,4 +23,8 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 1. A foolproof [Markdown cheat sheet](http://daringfireball.net/projects/markdown/basics). _External link._
 2. Help! [What do I do if I'm stuck?](https://github.com/18mr/documentation/blob/master/stuck.md).
 
+### Administrator Documentation
+
+1. [Pushing to Amazon Web Services](https://github.com/18mr/documentation/blob/master/administrator.md).
+
 _If you're not an 18MR.org campaigner, I'm interested to hear feedback on our workflow and processes. Feel free to drop me a line._

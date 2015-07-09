@@ -6,17 +6,47 @@ Deploying this version of the call tool is a multistep process. Being precise wi
 
 Set up a petition in Action Network. [Here's the walkthrough](https://github.com/18mr/documentation/blob/master/action-network.md) if you need it.
 
+In addition to embedding the petition widget from Action Network, you will need to add some bits of code to override the default Action Network text (so the submit button says "Call Now!" instead of "Add Your Name" and the like).
+
+    <script>
+	      $(document).ready(function() {
+		    $('#can-petition-area-call-congress-be-a-champion-for-adoptee-citizenship').on('can_embed_loaded', function() {
+		        document.getElementsByName("commit")[0].value = "Call Now";
+		  	    $(".action_sidebar h4").text("Take Action");
+		  	    var str = document.getElementsByClassName("action_status_running_total")[0].innerHTML;
+		  	    var txt = str.replace("Signatures Collected", "Calls Completed");
+			      document.getElementsByClassName("action_status_running_total")[0].innerHTML = txt;
+		      });
+	      });
+    </script>
+
+The ``#can-petition-area-call-congress-be-a-champion-for-adoptee-citizenship`` is the ID of the div created by Action Network; you can find the right one for your new petition in the last line of the code you embed when you create an Action Network petition.
+
 ## Set Up Your Thank You Page
 
-Unlike a standard petition, where we use the default Action Network share tools, when we run call-in campaigns, we create static pages on http://action.18mr.org to host the call script and share buttons. 
+Unlike a standard petition, where we use the default Action Network share tools, when we run call-in campaigns, we create static pages on http://action.18mr.org to host the call script and share buttons. Before you start, make sure your local version of action.18mr.org is up-to-date.
+
+### Create a new folder
+
+On your local machine, reate a new folder. Name it what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``.
+
+### Update your thank you page in Action Network
+
+In the "Response Options" tab, insert the permanent url of the thank you page you just made. 
+
+_Remember that this will throw a 404 error until the live Amazon Web Services version has been updated by Cayden._
 
 ## Record Your Audio Files
 
 You can just record audio files on your phone, and email them to yourself. You will want to
 
+Place your files in a new folder in your local clone of action.18mr.org. The filepath should be similar to previous campaigns, such as: ``static/audio/chu-nn``.
+
+Once you've created the campaign page, landing page, and audio files, commit your changes and se
+
 ## Set Up Twilio Numbers
 
-For now, get in touch with Cayden to set up Twilio numbers.
+For now, get in touch with Cayden to set up Twilio numbers. Make sure you tell them the campaign slug from ``/data/campaigns.yaml`` that you will set up below.
 
 ## Update campaigns.yaml in [call-congress](https://github.com/18mr/call-congress)
 

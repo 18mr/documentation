@@ -17,6 +17,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 1. Learn how to [create & edit content](https://github.com/18mr/documentation/blob/master/editing-content.md).
 2. Make sure your personal [fork is up to date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md).
 3. [Step-by-step setup for Action Network petitions](https://github.com/18mr/documentation/blob/master/action-network.md).
+4. Create a new [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md)...it's not as hard as you think!
 
 ### General Reference
 

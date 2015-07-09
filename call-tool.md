@@ -58,11 +58,13 @@ _Remember that this will throw a 404 error until the live Amazon Web Services ve
 
 ## Record Your Audio Files
 
-You can just record audio files on your phone, and email them to yourself. You will want to
+You can just record audio files on your phone, and email them to yourself. You may wish to listen to example files, and call through an existing campaign, in order to get an idea of what each snippet does.
+
+Please name your files uniformly.
 
 Place your files in a new folder in your local clone of action.18mr.org. The filepath should be similar to previous campaigns, such as: ``static/audio/chu-nn``.
 
-Once you've created the campaign page, landing page, and audio files, commit your changes and se
+Once you've created the campaign page, landing page, and audio files, commit your changes and send a pull request to get all that good stuff into the main branch and out to AWS.
 
 ## Set Up Twilio Numbers
 

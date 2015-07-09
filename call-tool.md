@@ -30,6 +30,26 @@ Unlike a standard petition, where we use the default Action Network share tools,
 
 On your local machine, reate a new folder. Name it what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``.
 
+### Add your content
+
+Your thank you page's [front matter](https://github.com/18mr/documentation/blob/master/action-network.md#create-front-matter) is more simple than a petition page's:
+
+    ---
+    layout: petition-page
+    title: "You're calling Rep. Judy Chu"
+    permalink: /chu-call-script/
+    facebooktext: 'Your Facebook share text.'
+    twittertext: 'Your Twitter share text. %2318MR'
+    ---
+
+The front matter for facebooktext and twittertext will be the default share text for automatically generated share buttons. You'll notice that the hashtag is a random series of characters--that's to help Jekyll generate a functional link for the Twitter share link.
+
+_Pro Tip: use [this cheat sheet](http://www.w3schools.com/tags/ref_urlencode.asp) to properly encode special characters in Twitter text._
+
+Once you've done that, compose your thank you page's body. This should include a word of thanks, number(s) to call if you aren't connected (_probably skip this if you're setting up a call tool to call multiple members of Congress_), talking points or a call script, and sharing links for after the user has completed the call.
+
+Check out the way previous [call script pages](https://github.com/18mr/action/blob/gh-pages/chu-callscript/index.md) have been formatted before. Note that the actual call script is enclosed by a ``<div class=featurebox>`` which gives it highlighted styling.
+
 ### Update your thank you page in Action Network
 
 In the "Response Options" tab, insert the permanent url of the thank you page you just made. 

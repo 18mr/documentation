@@ -2,6 +2,14 @@ The current version of our call tool lives [here](https://github.com/18mr/call-c
 
 Deploying this version of the call tool is a multistep process. Being precise with your updates to app files will ensure that nothing shady happens when the updated version is deployed. Take care, and you'll do great!
 
+## Table of Contents
+
+1. [Set Up Your Petition](https://github.com/18mr/documentation/blob/master/call-tool.md#set-up-your-petition)
+2. [Set Up Your Thank You Page](https://github.com/18mr/documentation/blob/master/call-tool.md#set-up-your-thank-you-page)
+3. [Record Your Audio Files](https://github.com/18mr/documentation/blob/master/call-tool.md#record-your-audio-files)
+4. [Set Up Twilio Numbers](https://github.com/18mr/documentation/blob/master/call-tool.md#set-up-twilio-numbers)
+5. [Update campaigns.yaml in call-congress](https://github.com/18mr/documentation/blob/master/call-tool.md#update-campaignsyaml-in-call-congress)
+
 ## Set Up Your Petition
 
 Set up a petition in Action Network. [Here's the walkthrough](https://github.com/18mr/documentation/blob/master/action-network.md) if you need it.
@@ -62,16 +70,14 @@ You can just record audio files on your phone, and email them to yourself. You m
 
 Please name your files uniformly. Filenames should be based on the parameter they are assigned to, which keeps things neat and easy. From the [call-congress README](https://github.com/18mr/call-congress/blob/master/README.md):
 
-Messages: Can be urls for recorded message to play or text for the robot to read. Text can be rendered as a mustache template. The following messages are the defaults and will be inherited by new campaigns unless overwritten.
-
-* msg_intro: Hi. Welcome to call congress.
-* msg_ask_zip: Please enter your zip code so we can lookup your Congress person.
-* msg_invalid_zip: "Sorry, that zip code didn't work. Please try again."
-* msg_call_block_intro: "We'll now connect you to {{n_reps}} representatives. Press # for next rep."
-* msg_rep_intro: "We're now connecting you to {{name}}"
+* msg_intro: This is the first audio a new caller hears. Introduce yourself and the tool.
+* msg_ask_zip: Ask for the user's ZIP code if you are looking it up.
+* msg_invalid_zip: An error message about their ZIP code.
+* msg_call_block_intro: In this block, introduce the campaign. Read through the script, and then tell the caller that when they're one with their call, they can press * to proceed to the next call (if applicable).
+* msg_rep_intro: Notify the caller they're being connected to the next office.
 * msg_special_call_intro: Optional: if an extra first call number is specified in the remote Google Spreadsheet, this text can be used to introduce the extra call. It's optional, and if not specified, we'll fall back to _msg_rep_intro_.
-* msg_between_thanks: You're doing great - here's the next call.
-* msg_final_thanks: Thank you!
+* msg_between_thanks: Offer some words of encouragement!
+* msg_final_thanks: Thank the caller for their time. Remind them about social media, microsites, or upcoming events.
 
 For example, if you want to record a new introduction, name that file ``msg_intro.mp3``.
 
@@ -104,6 +110,21 @@ Here are the basic fields in the yaml file:
 * **randomize_order** (optional, default false) randomize the order of the phone calls
 * **skip_star_confirm** (optional, default false) Whether to skip the "press star to confirm" step for campaigns which don't gather zipcode
 * **call_human_check** (optional, default false) Whether to check the recipient is not an answering machine. Note, will add a 3 second delay before your call begins.
+* **extra_first_calls** (optional) specify non-Congressional targets action-takers will call before any Congressional targets. Name, phone number, and title should be included as a yaml list.
+* **extra_last_calls** (optional) specify non-Congressional targets action-takers will call after any Congressional targets. Name, phone number, and title should be included as a yaml list.
+
+You'll also see these field options for audio files. Included are the default values, if you don't add new text for the robot or a custom audio filepath:
+
+* msg_intro: Hi. Welcome to call congress.
+* msg_ask_zip: Please enter your zip code so we can lookup your Congress person.
+* msg_invalid_zip: "Sorry, that zip code didn't work. Please try again."
+* msg_call_block_intro: "We'll now connect you to {{n_reps}} representatives. Press # for next rep."
+* msg_rep_intro: "We're now connecting you to {{name}}"
+* msg_special_call_intro: Optional: if an extra first call number is specified in the remote Google Spreadsheet, this text can be used to introduce the extra call. It's optional, and if not specified, we'll fall back to _msg_rep_intro_.
+* msg_between_thanks: You're doing great - here's the next call.
+* msg_final_thanks: Thank you!
+
+_Pro Tip: custom filepaths should always start with ``http://action.18mr.org/static/audio/your-campaign/``_
 
 ### Getting fancy
 
@@ -111,6 +132,16 @@ __Case 1: Targeting Particular Senators__
 
 Let's say you want to target a couple particular Senators to get to vote a particular way on a bill. You can [find their bioguide ID here](http://bioguide.congress.gov/biosearch/biosearch.asp). In ``repIds``, list each ID in a yaml list surrounded by ``[]`` and separated by commas.
 
+When you search the bioguide, you'll have to find the ID in the URL, highlighted below:
+
+![chu](https://cloud.githubusercontent.com/assets/2704279/8621822/908469ce-26dc-11e5-8175-e42bd401f539.PNG)
+
 __Case 2: Targeting Without Members of Congress__
 
 Let's say you're setting up the call tool to call ICE about a deportation or detainer case. You don't need to call any members of Congress right now, but you want the tool to connect users directly to several ICE officials.
+
+### Going live
+
+Once you've saved your new campaigns.yaml file, commit the changes to your fork of call-congress and send a pull request.
+
+_Before your campaign is live and testable_, keep in mind that tech has to approve the pull request and deploy the changes to the Heroku server. Sending a pull request is all you need to do; tech will notify you your tool is live and can be tested.

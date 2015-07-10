@@ -14,6 +14,8 @@ Deploying this version of the call tool is a multistep process. Being precise wi
 
 Set up a petition in Action Network. [Here's the walkthrough](https://github.com/18mr/documentation/blob/master/action-network.md) if you need it.
 
+You will also need to add an extra line of Front Matter to your Jekyll page. It should say: ``call-js: true``.
+
 In addition to embedding the petition widget from Action Network, you will need to add some bits of code to override the default Action Network text (so the submit button says "Call Now!" instead of "Add Your Name" and the like).
 
     <script>
@@ -36,11 +38,11 @@ Unlike a standard petition, where we use the default Action Network share tools,
 
 ### Create a new folder
 
-On your local machine, reate a new folder. Name it what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``. This tells Jekyll to generate a static page (i.e., not a "blog entry").
+On your local machine, create a new folder in the main directory, ``action``. Name it something descriptive, preferably what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``. This tells Jekyll to generate a static page (i.e., not a "blog entry").
 
 ### Add your content
 
-Your thank you page's [front matter](https://github.com/18mr/documentation/blob/master/action-network.md#create-front-matter) is more simple than a petition page's:
+Your thank you page's [Front Matter](https://github.com/18mr/documentation/blob/master/action-network.md#create-front-matter) is more simple than a petition page's:
 
     ---
     layout: petition-page
@@ -50,23 +52,23 @@ Your thank you page's [front matter](https://github.com/18mr/documentation/blob/
     twittertext: 'Your Twitter share text. %2318MR'
     ---
 
-The front matter for facebooktext and twittertext will be the default share text for automatically generated share buttons. You'll notice that the hashtag is a random series of characters--that's to help Jekyll generate a functional link for the Twitter share link.
+The Front Matter for ``facebooktext`` and ``twittertext`` will be the default share text for automatically generated share buttons. You'll notice that the hashtag is a random series of characters--that's to help Jekyll generate a functional link for the Twitter share link.
 
 _Pro Tip: use [this cheat sheet](http://www.w3schools.com/tags/ref_urlencode.asp) to properly encode special characters in Twitter text._
 
-Once you've done that, compose your thank you page's body. This should include a word of thanks, number(s) to call if you aren't connected since sometimes call-congress throws errors that I don't understand (_probably skip this if you're setting up a call tool to call multiple members of Congress_), talking points or a call script, and sharing links for after the user has completed the call.
+Once you've done that, compose your thank you page's body. This should include a word of thanks, number(s) to call if you aren't connected since sometimes ``call-congress`` throws errors that I don't understand (_probably skip this if you're setting up a call tool to call multiple members of Congress_), talking points or a call script, and sharing links for after the user has completed the call.
 
 Check out the way previous [call script pages](https://github.com/18mr/action/blob/gh-pages/chu-callscript/index.md) have been formatted before. Note that the actual call script is enclosed by a ``<div class=featurebox>`` which gives it highlighted styling.
 
 ### Update your thank you page in Action Network
 
-In the "Response Options" tab, insert the permanent url of the thank you page you just made. 
+In the "Response Options" tab, insert the permanent URL of the thank you page you just made. 
 
 _Pro Tip: that this will throw a 404 error until the live Amazon Web Services version has been updated. Use a [local server emulator](https://github.com/18mr/documentation/blob/master/local-site.md) to test your share links._
 
 ## Record Your Audio Files
 
-You can just record audio files on your phone, and email them to yourself. You may wish to listen to example files, and call through an existing campaign, in order to get an idea of what each snippet does.
+You can just record audio files on your phone, and email them to yourself. You may wish to listen to example files by calling through an existing campaign in order to get an idea of what each snippet does.
 
 Please name your files uniformly. Filenames should be based on the parameter they are assigned to, which keeps things neat and easy. From the [call-congress README](https://github.com/18mr/call-congress/blob/master/README.md):
 
@@ -87,7 +89,7 @@ Once you've created the campaign page, landing page, and audio files, commit you
 
 ## Set Up Twilio Numbers
 
-For now, get in touch with Cayden to set up Twilio numbers. Make sure you tell them the campaign slug from ``/data/campaigns.yaml`` that you will set up below.
+For now, get in touch with me to set up Twilio numbers. Make sure you tell me the campaign slug from ``/data/campaigns.yaml`` that you will set up below.
 
 ## Update campaigns.yaml in [call-congress](https://github.com/18mr/call-congress)
 
@@ -115,14 +117,14 @@ Here are the basic fields in the yaml file:
 
 You'll also see these field options for audio files. Included are the default values, if you don't add new text for the robot or a custom audio filepath:
 
-* msg_intro: Hi. Welcome to call congress.
-* msg_ask_zip: Please enter your zip code so we can lookup your Congress person.
-* msg_invalid_zip: "Sorry, that zip code didn't work. Please try again."
-* msg_call_block_intro: "We'll now connect you to {{n_reps}} representatives. Press # for next rep."
-* msg_rep_intro: "We're now connecting you to {{name}}"
-* msg_special_call_intro: Optional: if an extra first call number is specified in the remote Google Spreadsheet, this text can be used to introduce the extra call. It's optional, and if not specified, we'll fall back to _msg_rep_intro_.
-* msg_between_thanks: You're doing great - here's the next call.
-* msg_final_thanks: Thank you!
+* **msg_intro**: Hi. Welcome to call congress.
+* **msg_ask_zip**: Please enter your zip code so we can lookup your Congress person.
+* **msg_invalid_zip**: "Sorry, that zip code didn't work. Please try again."
+* **msg_call_block_intro**: "We'll now connect you to {{n_reps}} representatives. Press # for next rep."
+* **msg_rep_intro**: "We're now connecting you to {{name}}"
+* **msg_special_call_intro**: Optional: if an extra first call number is specified in the remote Google Spreadsheet, this text can be used to introduce the extra call. It's optional, and if not specified, we'll fall back to _msg_rep_intro_.
+* **msg_between_thanks**: You're doing great - here's the next call.
+* **msg_final_thanks**: Thank you!
 
 _Pro Tip: custom filepaths should always start with ``http://action.18mr.org/static/audio/your-campaign/``_
 
@@ -139,6 +141,10 @@ When you search the bioguide, you'll have to find the ID in the URL, highlighted
 __Case 2: Targeting Without Members of Congress__
 
 Let's say you're setting up the call tool to call ICE about a deportation or detainer case. You don't need to call any members of Congress right now, but you want the tool to connect users directly to several ICE officials.
+
+A great example of this use case is the Stand With Nan-Hui campaign. You'll notice that ``target_house`` and ``target_senate`` are set to false. ``repIds`` also contains an empty list.
+
+![swnh](https://cloud.githubusercontent.com/assets/2704279/8622533/da46e722-26e0-11e5-8039-44e1b17887c3.PNG)
 
 ### Going live
 

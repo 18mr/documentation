@@ -20,7 +20,7 @@ In addition to embedding the petition widget from Action Network, you will need 
 	      });
     </script>
 
-The ``#can-petition-area-call-congress-be-a-champion-for-adoptee-citizenship`` is the ID of the div created by Action Network; you can find the right one for your new petition in the last line of the code you embed when you create an Action Network petition.
+The only thing you have to change in the code above is ``#can-petition-area-call-congress-be-a-champion-for-adoptee-citizenship``. It's the ID of the div created by Action Network; you can find the right one for your new petition in the last line of the [code you embed](https://github.com/18mr/documentation/blob/master/action-network.md#step-three-embed-it) when you create an Action Network petition.
 
 ## Set Up Your Thank You Page
 
@@ -28,7 +28,7 @@ Unlike a standard petition, where we use the default Action Network share tools,
 
 ### Create a new folder
 
-On your local machine, reate a new folder. Name it what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``.
+On your local machine, reate a new folder. Name it what you want the slug to be in the URL, like ``chu-callscript``. Create a new file in that folder called ``index.md``. This tells Jekyll to generate a static page (i.e., not a "blog entry").
 
 ### Add your content
 
@@ -46,7 +46,7 @@ The front matter for facebooktext and twittertext will be the default share text
 
 _Pro Tip: use [this cheat sheet](http://www.w3schools.com/tags/ref_urlencode.asp) to properly encode special characters in Twitter text._
 
-Once you've done that, compose your thank you page's body. This should include a word of thanks, number(s) to call if you aren't connected (_probably skip this if you're setting up a call tool to call multiple members of Congress_), talking points or a call script, and sharing links for after the user has completed the call.
+Once you've done that, compose your thank you page's body. This should include a word of thanks, number(s) to call if you aren't connected since sometimes call-congress throws errors that I don't understand (_probably skip this if you're setting up a call tool to call multiple members of Congress_), talking points or a call script, and sharing links for after the user has completed the call.
 
 Check out the way previous [call script pages](https://github.com/18mr/action/blob/gh-pages/chu-callscript/index.md) have been formatted before. Note that the actual call script is enclosed by a ``<div class=featurebox>`` which gives it highlighted styling.
 
@@ -54,13 +54,26 @@ Check out the way previous [call script pages](https://github.com/18mr/action/bl
 
 In the "Response Options" tab, insert the permanent url of the thank you page you just made. 
 
-_Remember that this will throw a 404 error until the live Amazon Web Services version has been updated by Cayden._
+_Pro Tip: that this will throw a 404 error until the live Amazon Web Services version has been updated. Use a [local server emulator](https://github.com/18mr/documentation/blob/master/local-site.md) to test your share links._
 
 ## Record Your Audio Files
 
 You can just record audio files on your phone, and email them to yourself. You may wish to listen to example files, and call through an existing campaign, in order to get an idea of what each snippet does.
 
-Please name your files uniformly.
+Please name your files uniformly. Filenames should be based on the parameter they are assigned to, which keeps things neat and easy. From the [call-congress README](https://github.com/18mr/call-congress/blob/master/README.md):
+
+Messages: Can be urls for recorded message to play or text for the robot to read. Text can be rendered as a mustache template. The following messages are the defaults and will be inherited by new campaigns unless overwritten.
+
+* msg_intro: Hi. Welcome to call congress.
+* msg_ask_zip: Please enter your zip code so we can lookup your Congress person.
+* msg_invalid_zip: "Sorry, that zip code didn't work. Please try again."
+* msg_call_block_intro: "We'll now connect you to {{n_reps}} representatives. Press # for next rep."
+* msg_rep_intro: "We're now connecting you to {{name}}"
+* msg_special_call_intro: Optional: if an extra first call number is specified in the remote Google Spreadsheet, this text can be used to introduce the extra call. It's optional, and if not specified, we'll fall back to _msg_rep_intro_.
+* msg_between_thanks: You're doing great - here's the next call.
+* msg_final_thanks: Thank you!
+
+For example, if you want to record a new introduction, name that file ``msg_intro.mp3``.
 
 Place your files in a new folder in your local clone of action.18mr.org. The filepath should be similar to previous campaigns, such as: ``static/audio/chu-nn``.
 
@@ -74,3 +87,30 @@ For now, get in touch with Cayden to set up Twilio numbers. Make sure you tell t
 
 If you haven't already, create a fork of [call-congress](https://github.com/18mr/call-congress). Once you've cloned it locally, open up the ``/data/campaigns.yaml`` file in your favorite text editor. You'll see that a "default" campaign exists, as well as other live call-in campaigns that are currently running.
 
+You need to create a new item in the yaml file. You may wish just to copy the existing yaml from a previous campaign.
+
+_Pro Tip: yaml is notoriously fickle. Make sure you use spaces instead of tabs and everything is the right number of spaces, otherwise the yaml won't process and your campaign won't work!_
+
+Here are the basic fields in the yaml file:
+
+* **id**: the unique identifying slug for the campaign.
+* **number** the phone number(s) you get from Twilio.
+* **target_house** (boolean) include members of the House of Representatives
+* **target_senate** (boolean) include Senators
+* **target_house_first** allows the campaign to target house members before senate members (default: target senate first)
+* **only_call_1_sen** (optional, default false) only call one senator
+* **only_call_1_rep** (optional, default false) only call one representative
+* **repIds** (optional) list of rep. IDs to target
+* **randomize_order** (optional, default false) randomize the order of the phone calls
+* **skip_star_confirm** (optional, default false) Whether to skip the "press star to confirm" step for campaigns which don't gather zipcode
+* **call_human_check** (optional, default false) Whether to check the recipient is not an answering machine. Note, will add a 3 second delay before your call begins.
+
+### Getting fancy
+
+__Case 1: Targeting Particular Senators__
+
+Let's say you want to target a couple particular Senators to get to vote a particular way on a bill. You can [find their bioguide ID here](http://bioguide.congress.gov/biosearch/biosearch.asp). In ``repIds``, list each ID in a yaml list surrounded by ``[]`` and separated by commas.
+
+__Case 2: Targeting Without Members of Congress__
+
+Let's say you're setting up the call tool to call ICE about a deportation or detainer case. You don't need to call any members of Congress right now, but you want the tool to connect users directly to several ICE officials.

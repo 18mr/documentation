@@ -14,7 +14,7 @@ Deploying this version of the call tool is a multistep process. Being precise wi
 
 Set up a petition in Action Network. [Here's the walkthrough](https://github.com/18mr/documentation/blob/master/action-network.md) if you need it.
 
-You will also need to add two extra lines of Front Matter to your Jekyll page. They should say: 
+You will also need to add two extra lines of [Front Matter](https://github.com/18mr/documentation/blob/master/action-network.md#create-front-matter) to your Jekyll page. They should say: 
 
     callcampaign: true
     call-slug: nanhui-ice

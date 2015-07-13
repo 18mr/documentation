@@ -14,7 +14,12 @@ Deploying this version of the call tool is a multistep process. Being precise wi
 
 Set up a petition in Action Network. [Here's the walkthrough](https://github.com/18mr/documentation/blob/master/action-network.md) if you need it.
 
-You will also need to add an extra line of Front Matter to your Jekyll page. It should say: ``call-js: true``.
+You will also need to add two extra lines of Front Matter to your Jekyll page. They should say: 
+
+    callcampaign: true
+    call-slug: nanhui-ice
+
+Hang onto that ``call-slug`` so you can use it [later](https://github.com/18mr/documentation/blob/master/call-tool.md#update-campaignsyaml-in-call-congress).
 
 In addition to embedding the petition widget from Action Network, you will need to add some bits of code to override the default Action Network text (so the submit button says "Call Now!" instead of "Add Your Name" and the like).
 
@@ -101,7 +106,7 @@ _Pro Tip: yaml is notoriously fickle. Make sure you use spaces instead of tabs a
 
 Here are the basic fields in the yaml file:
 
-* **id**: the unique identifying slug for the campaign.
+* **id**: the unique identifying slug for the campaign. This should be the same as the ``call-slug`` from your petition page's Front Matter.
 * **number** the phone number(s) you get from Twilio.
 * **target_house** (boolean) include members of the House of Representatives
 * **target_senate** (boolean) include Senators

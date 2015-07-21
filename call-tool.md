@@ -50,14 +50,16 @@ On your local machine, create a new folder in the main directory, ``action``. Na
 Your thank you page's [Front Matter](https://github.com/18mr/documentation/blob/master/action-network.md#create-front-matter) is more simple than a petition page's:
 
     ---
-    layout: petition-page
+    layout: callscript
     title: "You're calling Rep. Judy Chu"
     permalink: /chu-call-script/
-    facebooktext: 'Your Facebook share text.'
     twittertext: 'Your Twitter share text. %2318MR'
+    sharelink: /chu-nn/
     ---
 
-The Front Matter for ``facebooktext`` and ``twittertext`` will be the default share text for automatically generated share buttons. You'll notice that the hashtag is a random series of characters--that's to help Jekyll generate a functional link for the Twitter share link.
+Make sure you change the ``layout`` to ``callscript`` so you get pretty share buttons. The ``sharelink`` is the slug for the petition you're attaching the script page to.
+
+The Front Matter for ``twittertext`` will be the default share text for automatically generated share buttons. You'll notice that the hashtag is a random series of characters--that's to help Jekyll generate a functional link for the Twitter share link.
 
 _Pro Tip: use [this cheat sheet](http://www.w3schools.com/tags/ref_urlencode.asp) to properly encode special characters in Twitter text._
 

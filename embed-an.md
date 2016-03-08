@@ -2,15 +2,9 @@ This file is a step-by-step guide to setting up an Action Network petition on th
 
 ## Step One: Load It!
 
-Most of the content displayed on petition pages on http://action.18mr.org is actually drawn directly from [Action Network](http://actionnetwork.org). When you're logged in, go create an action. Here's a quick guide to what shows up where when it gets translated into a post:
+Most of the content displayed on petition pages on http://action.18mr.org is actually drawn directly from [Action Network](http://actionnetwork.org). [Go create an action](https://github.com/18mr/documentation/blob/master/action-network.md).
 
-![petitionpage](https://cloud.githubusercontent.com/assets/2704279/5191144/fbb214e2-74a0-11e4-9c02-0c2ef7ea080a.PNG)
-
-1. "Title of your petition."
-2. "Banner image."
-3. "Why is this important?"
-
-Once you've saved this stuff, as well as filling in the social/sharing copy and the delivery copy, you're ready to create a post to house it. Be sure to add relevant tags to the action. This will help us track the kinds of campaigns and issue areas that matter the most to our members in the long-term.
+Once you've set up, you're ready to create a post to house it. Be sure to add relevant tags to the action. This will help us track the kinds of campaigns and issue areas that matter the most to our members in the long-term.
 
 ## Step Two: Prep It!
 

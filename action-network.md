@@ -22,7 +22,23 @@ Save this, and you don't have to edit anything on the second screen.
 
 If you want to collect a custom piece of data from members, such as a phone number, you can do this in the menu on the right that looks like this.
 
+![sign this petition](documentation/images/signthis.PNG)
+
+If you click "Add Or Edit Additional Form Questions," you'll get a slightly more user-friendly version. If you click "Add Custom Form HTML," you'll get a field to enter some HTML. This is useful for customizing the form beyond adding a field.
+
+Something you'll have to keep in mind, no matter which method you use, is to keep your data labels clean. There are already some custom data labels in our Action Network database, and you can find a [list of current custom data labels here](https://docs.google.com/spreadsheets/d/1cQ0qwEba8qWcM4ChPHNTfyJp_LOAR3bze5M0OEM5yBU/edit#gid=0). (Google Documents Link)
+
 ## Step Two: Tags for Segmenting
+
+Once you've saved your petition, you'll want to add tags. The principle of tag-writing is to place your petition in a broad category with other petitions for rapid segmenting. When a member signs a petition tagged "Immigration" the "Immigration" tag will also be added to their profile. We now know this is something they care about, and can email them with a future "Immigration" themed petition.
+
+We also tag users with partner names, even if we create an opt-in. This helps us track which partners produce results, and what kind of results they produce. In the example below, the petition was developed with Gazillion Adoptees, so a tag was created to identify that partnership.
+
+![adoptee citizenship act header](documentation/images/tags.PNG)
+
+The button to find and add tags is at the top of the management page. If you don't find a tag in the menu, you can add a tag by opening the "Start Organizing" dropdown and picking "tags." This will also show you a list of existing tags.
+
+![start organizing menu](documentation/images/start-organizing.PNG)
 
 ## Step Three: Response Options
 

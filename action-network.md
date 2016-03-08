@@ -40,8 +40,30 @@ The button to find and add tags is at the top of the management page. If you don
 
 ![start organizing menu](https://github.com/18mr/documentation/blob/master/images/start-organizing.PNG)
 
+The final two steps are tabs in the management screen.
+
 ## Step Three: Response Options
+
+In the "Response Options" tab, you'll want to customize the email members receive when they successfully add their name to the petition.
+
+![response options screen](https://github.com/18mr/documentation/blob/master/images/responseoptions.PNG)
+
+The default settings provide you with some basics, but be sure to do the following:
+
+1. Add your name to the from field, so it reads as "Your Name, 18MillionRising.org"
+2. 
 
 ## Step Four: Sharing Options
 
-Now you're ready to [embed that puppy in a page for publishing on action.18mr.org](https://github.com/18mr/documentation/blob/master/embed-an.md)!
+Now, click over to the "Sharing Options" tab. Here you will enter the defaults for after-action sharing to Twitter, Facebook, and via email.
+
+![sharing options screen](https://github.com/18mr/documentation/blob/master/images/sharingoptions.PNG)
+
+There are a few key things to change here:
+
+1. For Facebook, shorten the description. The default is your entire petition text; Facebook displays about 160 words.
+2. For Twitter, customize the Tweet. If possible, tag @18millionrising to make it easier for us to periodically retweet mentions of campaigns.
+3. For Email a Friend, shorten the description of the campaign to an elevator pitch. You may include additional information about the campaign, but think about what the quick ask is, and why someone would want to sign your petition. Make sure the link is toward the top of the sample email.
+4. Change the direct link to the slug of your [petition page](https://github.com/18mr/documentation/blob/master/embed-an.md). You'll want to make sure all the links in the above sections are also this slug, otherwise people will be directed to the default, Action Network branded petition instead of our pretty 18MR.org branded petition on our website.
+
+Save that goodness, and you're ready to [embed that petition in a page for publishing on action.18mr.org](https://github.com/18mr/documentation/blob/master/embed-an.md)!

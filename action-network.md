@@ -22,7 +22,7 @@ Save this, and you don't have to edit anything on the second screen.
 
 If you want to collect a custom piece of data from members, such as a phone number, you can do this in the menu on the right that looks like this.
 
-![sign this petition](documentation/images/signthis.PNG)
+![sign this petition](https://github.com/18mr/documentation/blob/master/images/signthis.PNG)
 
 If you click "Add Or Edit Additional Form Questions," you'll get a slightly more user-friendly version. If you click "Add Custom Form HTML," you'll get a field to enter some HTML. This is useful for customizing the form beyond adding a field.
 
@@ -34,11 +34,11 @@ Once you've saved your petition, you'll want to add tags. The principle of tag-w
 
 We also tag users with partner names, even if we create an opt-in. This helps us track which partners produce results, and what kind of results they produce. In the example below, the petition was developed with Gazillion Adoptees, so a tag was created to identify that partnership.
 
-![adoptee citizenship act header](documentation/images/tags.PNG)
+![adoptee citizenship act header](https://github.com/18mr/documentation/blob/master/images/tags.PNG)
 
 The button to find and add tags is at the top of the management page. If you don't find a tag in the menu, you can add a tag by opening the "Start Organizing" dropdown and picking "tags." This will also show you a list of existing tags.
 
-![start organizing menu](documentation/images/start-organizing.PNG)
+![start organizing menu](https://github.com/18mr/documentation/blob/master/images/start-organizing.PNG)
 
 ## Step Three: Response Options
 

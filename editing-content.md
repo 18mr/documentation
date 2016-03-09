@@ -40,7 +40,7 @@ You'll also notice that our website uses this funny markup and plain text. This 
 
 ### Images
 
-If you want to add images to your post that aren't included in the petition body, you'll first want to add the image to the site directory. _On your local machine_, put your image in a directory in the website's directory on your hard drive. In general, images should be stored in a folder unique to the post, such as _static/images/unique-slug/_.
+If you want to add images to your post, you'll first want to add the image to the site directory. _On your local machine_, put your image in a directory in the website's directory on your hard drive. In general, images should be stored in a folder unique to the post, such as _static/images/unique-slug/_.
 
 To then include that image in your post, you can use either HTML or the Markdown syntax to call it.
 
@@ -56,7 +56,7 @@ Notice that in both formats, there is the tag _baseurl_ in double curly brackets
 
 If you're just making a petition page, Action Network already provides all the goodies you need to roll out a new petition.
 
-Check out the Action Network document for more information on how to generate the code you need and make your petition look fabulous.
+Check out the [Action Network document](https://github.com/18mr/documentation/blob/master/action-network.md) for more information on how to generate the code you need and make your petition look fabulous.
 
 ## Step Three: Upload It!
 

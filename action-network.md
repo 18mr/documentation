@@ -40,9 +40,11 @@ The button to find and add tags is at the top of the management page. If you don
 
 ![start organizing menu](https://github.com/18mr/documentation/blob/master/images/start-organizing.PNG)
 
-The final two steps are tabs in the management screen.
+## Step Three: After Action Steps
 
-## Step Three: Response Options
+For some reason, in Action Network, you need to publish your petition in order to get to editing the response and sharing options. They are tabs available when you scroll down on the management screen.
+
+### Response Options
 
 In the "Response Options" tab, you'll want to customize the email members receive when they successfully add their name to the petition.
 
@@ -51,9 +53,10 @@ In the "Response Options" tab, you'll want to customize the email members receiv
 The default settings provide you with some basics, but be sure to do the following:
 
 1. Add your name to the from field, so it reads as "Your Name, 18MillionRising.org"
-2. 
+2. Write some evocative language. The default text is pretty boring, to be honest.
+3. Add your name to the sign off as well.
 
-## Step Four: Sharing Options
+### Sharing Options
 
 Now, click over to the "Sharing Options" tab. Here you will enter the defaults for after-action sharing to Twitter, Facebook, and via email.
 

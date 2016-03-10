@@ -1,4 +1,4 @@
-This file is a follow-up to [the one about editing content](https://github.com/18mr/documentation/blob/master/editing-content.md). Once a pull request has been processed or new code has been added to the main repository, you want to update yours so you have the most current content to work with. Basically, you're going to create and merge your own pull request from the master into your own repository.
+Once a pull request has been processed or new code has been added to the main repository, you want to update yours so you have the most current content to work with. Basically, you're going to create and merge your own pull request from the master into your own repository.
 
 Navigate to the fork in your _personal_ GitHub account (not the organizational one).
 

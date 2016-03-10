@@ -15,12 +15,11 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 ### Before You Dig In...
 
 2. Make sure your personal [fork is up to date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md) every time you begin work.
-3. Learn the basics of [creating & editing content](https://github.com/18mr/documentation/blob/master/editing-content.md).
 
 ### Updating 18millionrising.org
 
 1. When you've created a hot new campaign and want to feature it on the homepage, [you do this](https://github.com/18mr/documentation/blob/master/featured-campaign.md).
-2. A quick and easy guide to creating a new blog post.
+2. A quick and easy guide to [creating a new blog post](https://github.com/18mr/documentation/blob/master/blog-post.md).
 3. There are a lot of other data types you can work with, like staff bios.
 4. The current Jekyll file chart explainer for 18millionrising.org.
 
@@ -33,6 +32,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 ### General Reference
 
 1. A foolproof [Markdown cheat sheet](http://daringfireball.net/projects/markdown/basics). _External link._
+2. Learn the basics of [creating commits and pull requests](https://github.com/18mr/documentation/blob/master/commit-pullrequest.md).
 2. Help! [What do I do if I'm stuck?](https://github.com/18mr/documentation/blob/master/stuck.md).
 
 ### Administrator Documentation

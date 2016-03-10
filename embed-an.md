@@ -61,4 +61,4 @@ I'm a big fan of breaking up the code a little so it's easier for humans to read
 
 ## Step Four: Commit, Sync, Pull Request
 
-You're all set! [Click here for a reminder on how to commit, sync, and send a pull request](https://github.com/18mr/documentation/blob/master/editing-content.md#step-three-upload-it).
+You're all set! [Click here for a reminder on how to commit, sync, and send a pull request](https://github.com/18mr/documentation/blob/master/commit-pullrequest.md).

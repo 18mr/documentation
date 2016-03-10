@@ -6,6 +6,8 @@ Now that you're synced, you'll need to create two files: an image and a custom f
 
 You probably already have a campaign image -- in the repository on your computer for _action_. An easy way to get a copy in is to literally copy and paste it from _action/static/images/featured_ into _18mr/static/images/campaigns_. Boom. Done.
 
+_You'll notice that image files have naming conventions to help us keep track of which images map to which campaigns. Go ahead and rename your file if you have to!_
+
 ## Create a Campaign
 
 You'll notice that there are several folders of things in the _18mr_ repo. In addition to the basic Jekyll directories, there are directories for categories of posts on the site, as well as directories for authors, campaigns, and staff.
@@ -23,4 +25,4 @@ As you see, the campaign file is all Front Matter. Here is what you need to incl
 
 Save this file with a filename in the format YEAR-MONTH-DAY-name-of-campaign.md.
 
-Now you can [commit, sync, and create a pull request](https://github.com/18mr/documentation/blob/master/editing-content.md#step-three-upload-it). Your campaign will be live shortly!
+Now you can [commit, sync, and create a pull request](https://github.com/18mr/documentation/blob/master/commit-pullrequest.md). Your campaign will be live shortly!

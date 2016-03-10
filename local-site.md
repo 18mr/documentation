@@ -40,6 +40,4 @@ Once you're in the directory, type:
   
 Jekyll should now build your site. If you navigate to _http://localhost:4000_ in the browser of your choice, you'll see a local (i.e., not hosted on the internet) version of the website so you can look at the changes you make as you go. The "--watch" tag tells Jekyll to rebuild the site every time a change is detected in the repository. _If you're editing any content, you'll want to have the local server emulator running, so you can preview your changes._
 
-You can now use the text editor of your choice to [create and edit content](https://github.com/18mr/documentation/blob/master/editing-content.md).
-
-If the build fails, you may wish to Google the error. Stack Overflow contains a lot of answers to questions. If you can't figure it out, drop Cayden a line.
+You can now use the text editor of your choice to [write a blog post](https://github.com/18mr/documentation/blob/master/blog-post.md) or [create an action](https://github.com/18mr/documentation/blob/master/embed-an.md) or screw around with other kinds of content you might want to share with the world.

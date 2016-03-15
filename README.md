@@ -32,6 +32,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 1. A foolproof [Markdown cheat sheet](http://daringfireball.net/projects/markdown/basics). _External link._
 2. Learn the basics of [creating commits and pull requests](https://github.com/18mr/documentation/blob/master/commit-pullrequest.md).
+3. Got a weird question? [Maybe this FAQ will help](https://github.com/18mr/documentation/blob/master/faq.md).
 2. Help! [What do I do if I'm stuck?](https://github.com/18mr/documentation/blob/master/stuck.md).
 
 ### Administrator Documentation

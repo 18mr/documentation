@@ -26,7 +26,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 2. How to take your brilliant campaign copy and [make it into a petition on Action Network](https://github.com/18mr/documentation/blob/master/action-network.md).
 3. Then, take that petition and [turn it into a webpage](https://github.com/18mr/documentation/blob/master/embed-an.md).
-4. Creating a new [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md)...is not as hard as you think!
+4. Creating a new [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md) is easier than ever.
 
 ### General Reference
 

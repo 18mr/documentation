@@ -17,7 +17,7 @@ For now, get in touch with tech to set up Twilio numbers. Wait until you get con
 
 In case you need it, the complete campaigner documentation for CallPower is [here](https://github.com/18mr/documentation/blob/master/CallPower%20User%20Guide.pdf). This guide explains all the audio cues and options you can set up for any given campaign.
 
-__You can access [the campaigner interface for CallPower here](http://calls.18mr.org).__
+__You can access [the campaigner interface for CallPower here](https://callpower-18mr.herokuapp.com/).__
 
 ### Create Campaign
 

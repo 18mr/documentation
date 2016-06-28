@@ -59,6 +59,66 @@ I'm a big fan of breaking up the code a little so it's easier for humans to read
     <script src='https://actionnetwork.org/widgets/v2/petition/petition-name?format=js&source=widget&style=full'></script>
     <div id='can-petition-area-petition-name' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
 
-## Step Four: Commit, Sync, Pull Request
+## Step Four: Customize Widget Contents
+
+Let's say you're making a [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md) and you want to be able to change the default text in the widget. While you can't do it from Action Network, once you've embedded the widget, you can use a little Javascript to alter the text inside. First, set up the snippet on your petition page like this:
+
+    <script>
+        $(document).ready(function() {
+            $('#can-petition-area-petition-name').on('can_embed_loaded', function() {
+        	
+            });
+        });
+    </script>
+    
+Instead of `#can-petition-area-petition name`, use the slug that you find in your own embed code from Step Three.
+
+Now, in the middle of that you can drop some little bits of code that select elements inside the widget and change them around. If you open up your local version of the website, and inspect an element, you can learn how to refer to that element. Here are the three basic ways you can refer to elements, with some examples of how you might use them.
+
+### Get Elements by Name
+
+Some elements have a "name." A great example of this is the submit button, which usually reads "Add Your Name." That doesn't make sense if the ask is to call your Senator, so you can use the following snippet to select the "commit" button by name and change the text:
+
+    document.getElementsByName("commit")[0].value = "Call Now";
+
+### Select Elements Using CSS
+
+If an element has an easily identifiable CSS label, you can use that as well. Instead of the default "Sign This Petition," you may want visitors to read a more generic phrase, like "Take Action." If you inspect that text on your local site, you'll see that it's surrounded by `<h4>` and inside a `div` called `.action_sidebar`. So you'd select it and then change the text to "Take Action," like so:
+    
+    $(".action_sidebar h4").text("Take Action");
+
+### Select Elements by Class Name
+
+If there's _just_ a class name, and you want to select a particular _part_ of the text inside that class, you may need to use the following, longer snippet. In this example, instead of "Signatures Collected" at the top of the goal bar, you want the units we're tracking to be "Calls Completed."
+
+    var str = document.getElementsByClassName("action_status_running_total")[0].innerHTML;
+    
+Says that we're defining a variable called `str` by grabbing the HTML contents of `.action_status_running_total`.
+    
+    var txt = str.replace("Signatures Collected", "Calls Completed");
+
+Says that we're defining a variable called `txt` by swapping the string of characters "Signatures Collected" for the string of characters "Calls Completed."
+
+    document.getElementsByClassName("action_status_running_total")[0].innerHTML = txt;
+    
+Says that we're going into the HTML document, getting the contents of `.action_status_running_total` and finding and replacing the strings we defined in the variable `txt`.
+
+All together, this should look like this. 
+
+    <script>
+        $(document).ready(function() {
+            $('#can-petition-area-oppose-riders-that-threaten-net-neutrality').on('can_embed_loaded', function() {
+                document.getElementsByName("commit")[0].value = "Call Now";
+                $(".action_sidebar h4").text("Take Action");
+                var str = document.getElementsByClassName("action_status_running_total")[0].innerHTML;
+                var txt = str.replace("Signatures Collected", "Calls Completed");
+                document.getElementsByClassName("action_status_running_total")[0].innerHTML = txt;
+            });
+        });
+    </script>
+    
+Still have questions? Feel free to ask.
+
+## Step Five: Commit, Sync, Pull Request
 
 You're all set! [Click here for a reminder on how to commit, sync, and send a pull request](https://github.com/18mr/documentation/blob/master/commit-pullrequest.md).

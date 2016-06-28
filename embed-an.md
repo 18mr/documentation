@@ -1,5 +1,11 @@
 This file is a step-by-step guide to setting up an Action Network petition on the new stack. You'll use some skills from other files in the documentation, but this can also be a stand-alone walkthrough for creating a petition.
 
+1. [Load It!](https://github.com/18mr/documentation/blob/master/embed-an.md#step-one-load-it)
+2. [Prep It!](https://github.com/18mr/documentation/blob/master/embed-an.md#step-two-prep-it)
+3. [Embed It!](https://github.com/18mr/documentation/blob/master/embed-an.md#step-three-embed-it)
+4. [Customize Widget Contents!](https://github.com/18mr/documentation/blob/master/embed-an.md#step-four-customize-widget-contents)
+5. [Commit, Sync, Pull Request](https://github.com/18mr/documentation/blob/master/embed-an.md#step-five-commit-sync-pull-request)
+
 ## Step One: Load It!
 
 Most of the content displayed on petition pages on http://action.18mr.org is actually drawn directly from [Action Network](http://actionnetwork.org). [Go create an action](https://github.com/18mr/documentation/blob/master/action-network.md).
@@ -71,7 +77,7 @@ Let's say you're making a [call-in campaign](https://github.com/18mr/documentati
         });
     </script>
     
-Instead of `#can-petition-area-petition name`, use the slug that you find in your own embed code from Step Three.
+Instead of `#can-petition-area-petition-name`, use the slug that you find in your own embed code from Step Three.
 
 Now, in the middle of that you can drop some little bits of code that select elements inside the widget and change them around. If you open up your local version of the website, and inspect an element, you can learn how to refer to that element. Here are the three basic ways you can refer to elements, with some examples of how you might use them.
 
@@ -107,7 +113,7 @@ All together, this should look like this.
 
     <script>
         $(document).ready(function() {
-            $('#can-petition-area-oppose-riders-that-threaten-net-neutrality').on('can_embed_loaded', function() {
+            $('#can-petition-area-petition-name').on('can_embed_loaded', function() {
                 document.getElementsByName("commit")[0].value = "Call Now";
                 $(".action_sidebar h4").text("Take Action");
                 var str = document.getElementsByClassName("action_status_running_total")[0].innerHTML;

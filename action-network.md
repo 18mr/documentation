@@ -24,9 +24,7 @@ If you want to collect a custom piece of data from members, such as a phone numb
 
 ![sign this petition](https://github.com/18mr/documentation/blob/master/images/signthis.PNG)
 
-If you click "Add Or Edit Additional Form Questions," you'll get a slightly more user-friendly version. If you click "Add Custom Form HTML," you'll get a field to enter some HTML. This is useful for customizing the form beyond adding a field.
-
-Something you'll have to keep in mind, no matter which method you use, is to keep your data labels clean. There are already some custom data labels in our Action Network database, and you can find a [list of current custom data labels here](https://docs.google.com/spreadsheets/d/1cQ0qwEba8qWcM4ChPHNTfyJp_LOAR3bze5M0OEM5yBU/edit#gid=0). (Google Documents Link)
+Click "Add Or Edit Additional Form Questions," and you can either assemble a new field or use a pre-built question that the tech team has provided for you. Find these pre-built questions in the dropdown menu on the right. _Please check to make sure that an appropriate question hasn't already been built_, because this helps keep our database all tidy and easy to read. No matter which method you use, take care to keep your data labels clean. There are already some custom data labels in our Action Network database, and you can find a [list of current custom data labels here](https://docs.google.com/spreadsheets/d/1cQ0qwEba8qWcM4ChPHNTfyJp_LOAR3bze5M0OEM5yBU/edit#gid=0). (Google Documents Link)
 
 ## Step Two: Tags for Segmenting
 

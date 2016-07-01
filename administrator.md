@@ -1,12 +1,12 @@
 So you're an administrator. Congrats. (Mostly this document is for Cayden's reference.)
 
-The actual http://action.18mr.org is now hosted on Amazon Web Services. Here are step-by-step deployment instructions.
+The actual http://action.18mr.org and http://18millionrising.org is now hosted on Amazon Web Services. Here are step-by-step deployment instructions.
 
 ## Sync Local Site and Rebuild in Ruby
 
 Check to make sure there are no errors. Worth double-checking by typing
 
-    bundle exec jekyll serve
+    jekyll serve -w
 
 and checking out http://localhost:4000 before pushing to AWS.
 

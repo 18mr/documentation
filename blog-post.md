@@ -54,6 +54,12 @@ Markdown has syntax for images, which looks a bit like this:
     
 If you want to do anything fancier (for instance, give your image some additional formatting) you can also use HTML in a Markdown document and Jekyll will parse it, no big deal.
   
+## Styles and Format 
+
+Is there an awesome snippet of text you want to highlight? Make a pretty pull quote by placing "> ##" before a line of text. 
+
+If you have an author bio to include, place it at the end of the post, beneath a horizontal line ("<HR>"), and italicize. 
+
 ## Save Your Post
 
 As indicated above, there's a right way to name your final product. It should match the name of your featured image as well as any additional image directory you may have created. In the category _posts_ directory you choose, save your document with this filename format:

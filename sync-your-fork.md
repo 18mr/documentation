@@ -2,11 +2,25 @@ Once a pull request has been processed or new code has been added to the main re
 
 Navigate to the fork in your _personal_ GitHub account (not the organizational one).
 
-If you can update from the master, organizational trunk, the button that says "Update from 18mr/the-project" will be clickable in the GitHub application.
+Click the button that says "New Pull Request." You can find it next to the branches dropdown.
 
-![update](https://github.com/18mr/documentation/blob/master/images/updatefrom.PNG)
+You'll get dropped on a screen that assumes you're trying to take changes you made and integrate them into the master production website. This is what you'd _usually_ do if you were trying to ship a new campaign or blog post. However, we're trying to go in the opposite direction.
 
-Click it and, voila! Your local version will be all up-to-date.
+On GitHub, a _base fork_ is the version of the project you're trying to add new code to. The _head fork_ is the place you're pulling that new code from. Thus, you should make sure your _base fork_ is your personal project, and the _head fork_ is the master repo, or 18mr/action, for instance. You may need to _compare across forks_. The link to do so is at the start of the "Open New Pull Request" page, like below.
+
+![open a new pull request](https://github.com/18mr/documentation/blob/master/images/comparison.PNG?raw=true)
+
+When you're reviewing your update, your comparison should look like the one below:
+
+![personal is the base fork, organizational is the head fork](https://github.com/18mr/documentation/blob/master/images/compareacross.PNG?raw=true)
+
+Great. Now create that pull request. You'll then be put on a page describing all the changes you're committing. When you scroll down to the bottom, there should be a green box that says 
+
+![this branch has no conflicts with the base branch](https://github.com/18mr/documentation/blob/master/images/noconflicts.PNG?raw=true)
+
+Press that button, confirm the merge, and all the changes will be added to your repository.
+
+Finally, open up your GitHub GUI and synchronize your local files with your remote files. And you're done!
 
 ### Why do I have to sync every time?
 

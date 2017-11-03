@@ -54,11 +54,11 @@ Markdown has syntax for images, which looks a bit like this:
     
 If you want to do anything fancier (for instance, give your image some additional formatting) you can also use HTML in a Markdown document and Jekyll will parse it, no big deal.
   
-## Styles and Format 
+## Styles
 
-Is there an awesome snippet of text you want to highlight? Make a pretty pull quote by placing "> ##" before a line of text. 
+Is there an awesome snippet of text you want to highlight? Make a pretty pull quote by placing `> ##` before a line of text. 
 
-If you have an author bio to include, place it at the end of the post, beneath a horizontal line ("<HR>"), and italicize. 
+If you have an author bio to include, place it at the end of the post, beneath a horizontal line (`<HR>`), and italicize. 
 
 ## Save Your Post
 

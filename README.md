@@ -14,7 +14,7 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 ### Before You Dig In...
 
-2. Make sure your personal [fork is up to date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md) every time you begin work.
+1. Make sure your personal [fork is up to date](https://github.com/18mr/documentation/blob/master/sync-your-fork.md) every time you begin work.
 
 ### Updating 18millionrising.org
 
@@ -25,9 +25,9 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 
 ### Working With action.18mr.org
 
-2. How to take your brilliant campaign copy and [make it into a petition on Action Network](https://github.com/18mr/documentation/blob/master/action-network.md).
-3. Then, take that petition and [turn it into a webpage](https://github.com/18mr/documentation/blob/master/embed-an.md).
-4. Creating a new [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md) is easier than ever.
+1. How to take your brilliant campaign copy and [make it into a petition on Action Network](https://github.com/18mr/documentation/blob/master/action-network.md).
+2. Then, take that petition and [turn it into a webpage](https://github.com/18mr/documentation/blob/master/embed-an.md).
+3. Creating a new [call-in campaign](https://github.com/18mr/documentation/blob/master/call-tool.md) is easier than ever.
 
 ### General Reference
 

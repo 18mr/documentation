@@ -18,6 +18,15 @@ Now that you've built the most recent version of the site, type
 
 Hopefully everything is as it should be. s3_website should recognize where the built site is and update it accordingly.
 
+## Force Rebuild on Github Pages
+
+If you're updating a Github-hosted microsite and your changes aren't live after you've merged the pull request, you can force rebuild the site with Jekyll.
+
+In Git Shell:
+
+    git commit -m 'rebuild pages' --allow-empty
+    git push origin <branch-name>
+
 ## Known Issues with s3_website
 
 _On a Windows Machine_

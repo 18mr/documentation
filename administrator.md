@@ -1,6 +1,8 @@
-So you're an administrator. Congrats. (Mostly this document is for Cayden's reference.)
+So you're an administrator. Congrats.
 
-The actual http://action.18mr.org and http://18millionrising.org is now hosted on Amazon Web Services. Here are step-by-step deployment instructions.
+For links to setup instructions, go check out [links](links.md).
+
+The actual https://action.18mr.org and https://18millionrising.org is now hosted on Amazon Web Services. Here are step-by-step deployment instructions.
 
 ## Sync Local Site and Rebuild in Ruby
 

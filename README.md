@@ -39,5 +39,4 @@ If you have questions, please [create a new issue](https://github.com/18mr/docum
 ### Administrator Documentation
 
 1. [Pushing to Amazon Web Services](https://github.com/18mr/documentation/blob/master/administrator.md).
-
-_If you're not an 18MR.org campaigner, I'm interested to hear feedback on our workflow and processes. Feel free to drop me a line._
+2. [Links to additional information](links.md), should you need it.

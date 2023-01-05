@@ -18,7 +18,11 @@ Intel and M1 Macs.
        - For Intel Mac:
          - `echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile`
          - Source the .bash_profile `. ~/.bash_profile`
-    - Verify that it works with `rvm -v`
+    - Verify that it works with `rvm -v`.
+      - An output like the below shows that it's working:
+
+      ```rvm 1.29.12-next (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]```
+    
 2. Install a ruby version: 2.6.x < version < 3.x.x
     - `rvm install 2.7.5` works well for the site
     - Explicitly use version: `rvm use 2.7.5`

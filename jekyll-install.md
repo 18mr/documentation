@@ -3,16 +3,7 @@
 This tutorial assumes that the user is
 familiar with a terminal command line interface.
 These instructions were performed on both 
-Intel and M1 Macs.
-
-### Running a microsite after installation steps 
-This part assumes that Ruby and Jekyll are installed. If not, run through the `Install Ruby` and `Install gems` section below.
-
-1. Clone the desired microsite
-2. Run the installation steps below for Ruby if it's not installed
-3. Use the correct version of ruby `rvm use 2.7.5`
-4. Install the gems using `bundle install`
-5. Run the site locally using `jekyll serve --watch`
+Intel and M1 Macs. These instructions work with Ruby versions 2.6.x < version < 3.x.x, specifically version 2.7.5.
 
 ### Install Ruby
 1. Install [rvm](https://rvm.io/rvm/install)
@@ -52,5 +43,13 @@ This part assumes that Ruby and Jekyll are installed. If not, run through the `I
   - `jekyll serve --watch`
   - If the above command does not work, try: `bundle exec jekyll serve --watch`
 2. Verify that the site is running by going to http://localhost:4000
+
+## Running a microsite after installation steps 
+This part assumes that Ruby and Jekyll are installed. If not, run through the `Install Ruby` and `Install gems` section below.
+
+1. Clone the desired microsite
+2. Use the correct version of ruby `rvm use 2.7.5`
+3. Install the gems using `bundle install`
+4. Run the site locally using `jekyll serve --watch`
     
     

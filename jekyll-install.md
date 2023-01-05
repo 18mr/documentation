@@ -38,7 +38,7 @@ Intel and M1 Macs.
          - Run `bundle install` again.
          - If there is an error with `ffi`, run `bundle update ffi`
          - Run `bundle install` again.
-4. Check to see if Jekyll is installed by running: `jekyll`. 
+4. Check to see if Jekyll is installed by running: `jekyll -v`. An output such as `jekyll 4.3.1` shows that it's working. 
     - If Jekyll is not installed, run `gem install jekyll`
 
 ## Run the site locally

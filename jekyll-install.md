@@ -9,6 +9,7 @@ Intel and M1 Macs.
 1. Install [rvm](https://rvm.io/rvm/install)
 2. Install a ruby version: 2.6.x < version < 3.x.x
     - `rvm install 2.7.5` works well for the site
+    - Explicitly use version: `rvm use 2.7.5`
     - For Intel Macs, this should be enough to install the gems.
 
 ## Install gems
@@ -20,6 +21,7 @@ Intel and M1 Macs.
            `bundle config build.nokogiri --use-system-libraries`
          - If there is an error with `ffi`, run `bundle update ffi`
          - Following these errors, run `bundle install` again.
+4. If Jekyll is not installed, run `gem install jekyll`
 
 ## Run the site locally
 1. There are two commands that run the site locally

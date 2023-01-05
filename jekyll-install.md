@@ -11,10 +11,13 @@ Intel and M1 Macs.
 ### Install Ruby
 1. Install [rvm](https://rvm.io/rvm/install)
    - The commands (if you don't want to read through):
-       - `curl -sSL https://get.rvm.io | bash -s stable`
+       - For both types of Macs run to install rvm: `curl -sSL https://get.rvm.io | bash -s stable`
        - For M1 Mac:
            - `echo "source $HOME/.rvm/scripts/rvm" >> ~/.zhrc`
-       - Source the .zshrc `. ~/.zshrc`
+           - Source the .zshrc `. ~/.zshrc`
+       - For Intel Mac:
+         - `echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile`
+         - Source the .bash_profile `. ~/.bash_profile`
     - Verify that it works with `rvm -v`
 2. Install a ruby version: 2.6.x < version < 3.x.x
     - `rvm install 2.7.5` works well for the site

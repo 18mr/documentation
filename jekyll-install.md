@@ -5,8 +5,14 @@ familiar with a terminal command line interface.
 These instructions were performed on both 
 Intel and M1 Macs.
 
-### Clone the desired microsite
+### Running a microsite after installation steps 
+This part assumes that Ruby and Jekyll are installed. If not, run through the `Install Ruby` and `Install gems` section below.
 
+1. Clone the desired microsite
+2. Run the installation steps below for Ruby if it's not installed
+3. Use the correct version of ruby `rvm use 2.7.5`
+4. Install the gems using `bundle install`
+5. Run the site locally using `jekyll serve --watch`
 
 ### Install Ruby
 1. Install [rvm](https://rvm.io/rvm/install)
